@@ -1,0 +1,14 @@
+body {
+    font-family: 'Capriola', sans-serif;
+    background-color: #F3DFF0;
+    color: #4A4A4A;
+}
+h1, h2, h3 {
+    font-family: 'Cagliostro', sans-serif;
+}
+.bg-roxo {
+    background-color: #B5A3E0;
+}
+.bg-amarelo {
+    background-color: #FBE68A;
+}
