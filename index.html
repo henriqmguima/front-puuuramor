@@ -7,100 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cagliostro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Capriola', sans-serif;
-            background-color: #F3DFF0;
-            color: #4A4A4A;
-        }
- 
-        
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-        h1, h2, h3 {
-            font-family: 'Cagliostro', sans-serif;
-        }
-        .bg-roxo {
-            background-color: #B5A3E0;
-        }
-        .bg-amarelo {
-            background-color: #FBE68A;
-        }
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh; /* Ocupa toda a altura da tela */
-            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgncW6CI1ZMFmtS0F-6uwgcO_0pElm2jMJYI_Wu58meqOJm1UXuQnUoIgkUlXPIAcmcCM_JyWLs90xoWrJ1tgBtkJDLCLGEn59J7ukIRes_pqPcgGsBgR7M6vjUqLvwpF1-epX2unWY0Iy4/w0/cat-1-4K.jpg') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0.7;
-        }
-
-        .navbar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 10;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-            max-width: 600px;
-        }
-
-        .btn-hero {
-            background-color: #FBE68A;
-            color: #4A4A4A;
-            font-weight: bold;
-            border-radius: 30px;
-            padding: 10px 20px;
-            border: none;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .btn-hero:hover {
-            opacity: 0.7;
-        }
-
-        .btn-submmit {
-            background-color: #FBE68A;
-            color: #4A4A4A;
-            font-weight: bold;
-            border-radius: 30px;
-            padding: 10px 20px;
-            border: none;
-            transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
-        }
-        .btn-submmit:hover{
-            opacity: 0.7;
-        }
-        .card {
-            border: none;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .footer {
-            background-color: #B5A3E0;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <section class="hero">
-        <h1>Bem-vindo à Puuuramor 🐾</h1>
-        <p>Uma ONG dedicada ao resgate e adoção de animais em busca de um lar amoroso.</p>
-        <a href="#adocao" class="btn btn-hero mt-3">Ver animais para adoção</a>
+        <h1 style="z-index: 2;">Bem-vindo à Puuuramor 🐾</h1>
+        <p style="z-index: 2;">Uma ONG dedicada ao resgate e adoção de animais em busca de um lar amoroso.</p>
+        <a href="#adocao" class="btn btn-hero mt-3" style="z-index: 2;">Ver animais para adoção</a>
     </section>    
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -108,8 +22,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#adocao">Adoção</a>
                     </li>
@@ -126,8 +40,9 @@
             </div>
         </div>
     </nav>
-
     
+    
+         
     <section id="adocao" class="container my-5 text-center">
         <h2>🐾 Adoção</h2>
         <p>Dê um lar cheio de amor para um de nossos animaizinhos!</p>
@@ -139,8 +54,10 @@
                     <img src="https://wallpapers.com/images/hd/matching-cat-pfp-in-bed-ztisy8r2x38x2jbc.jpg" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Mia</h5>
-                        <p class="card-text">Gatinha carinhosa e brincalhona.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Mia" data-description="Mia é uma gatinha carinhosa que adora brincar. Ela procura um lar onde possa receber muito carinho." data-image="https://wallpapers.com/images/hd/matching-cat-pfp-in-bed-ztisy8r2x38x2jbc.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
                     </div>
                 </div>
             </div>
@@ -149,8 +66,10 @@
                     <img src="https://jcpportraits.com/wp-content/uploads/2024/04/Organic-Social_Instagram_Standard-2_1080x1080.jpg" class="card-img-top" alt="Cachorro">
                     <div class="card-body">
                         <h5 class="card-title">Rex</h5>
-                        <p class="card-text">Cachorro dócil e protetor.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Rex" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://jcpportraits.com/wp-content/uploads/2024/04/Organic-Social_Instagram_Standard-2_1080x1080.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
                     </div>
                 </div>
             </div>
@@ -159,13 +78,15 @@
                     <img src="https://i.pinimg.com/originals/05/00/b9/0500b96dec3dc9c807226c3bf359ed75.jpg" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Luna</h5>
-                        <p class="card-text">Gata independente e esperta.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Luna" data-description="Luna é uma gata tranquila que adora um bom lugar para dormir. Ela precisa de uma família que ofereça carinho e cuidados." data-image="https://i.pinimg.com/originals/05/00/b9/0500b96dec3dc9c807226c3bf359ed75.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    
+       
         <!-- Animais extras escondidos -->
         <div class="row d-none" id="extra-adotaveis">
             <div class="col-md-4 mb-4">
@@ -173,8 +94,10 @@
                     <img src="https://avatarfiles.alphacoders.com/315/315251.jpg" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Felix</h5>
-                        <p class="card-text">Gato brincalhão e amigável.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Felix" data-description="https://avatarfiles.alphacoders.com/315/315251.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -183,8 +106,10 @@
                     <img src="https://wallpapers.com/images/hd/puppy-dog-pictures-avk9y2nvgyp9ieto.jpg" alt="Cachorro">
                     <div class="card-body">
                         <h5 class="card-title">Thor</h5>
-                        <p class="card-text">Cachorro energético e leal.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Thor" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://wallpapers.com/images/hd/puppy-dog-pictures-avk9y2nvgyp9ieto.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -193,8 +118,10 @@
                     <img src="https://wallpapers.com/images/hd/silly-cat-pictures-1080-x-1080-swx6idnb9efbpbvi.jpg" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Nina</h5>
-                        <p class="card-text">Gata meiga e tranquila.</p>
-                        <a href="#" class="btn btn-custom">Adotar</a>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Nina" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://wallpapers.com/images/hd/silly-cat-pictures-1080-x-1080-swx6idnb9efbpbvi.jpg">
+                            <i class="bi bi-heart"></i> Adoção
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -203,6 +130,23 @@
         <!-- Botões de Ver Mais e Ver Menos -->
         <button id="ver-mais" class="btn btn-custom mt-4">Ver Mais</button>
         <button id="ver-menos" class="btn btn-custom mt-4 d-none">Ver Menos</button>
+         <!-- Modal -->
+    <div class="modal fade" id="adoptModal" tabindex="-1" aria-labelledby="adoptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adoptModalLabel">Informações sobre o animal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalAnimalImage" class="img-fluid mb-3" alt="Animal">
+                    <h5 id="modalAnimalName"></h5>
+                    <p id="modalAnimalDescription"></p>
+                    <a href="#" class="btn">Quero Adotar</a>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
     
     
@@ -218,7 +162,6 @@
                 <img src="https://media.istockphoto.com/id/1525417918/photo/wearing-cat-scratcher-bored-red-collar-collar-brush-pets-close-up-young-old-handsome-animal.jpg?s=612x612&w=0&k=20&c=pbc2e4Z0ZYjsfif9JKZXlh7vu86f2Whaaqe5GC_mwqg=" class="card-img-top" alt="Gato">
                 <div class="card-body">
                     <h5 class="card-title">Bento</h5>
-                    <p class="card-text">Gato idoso que precisa de cuidados especiais.</p>
                 </div>
             </div>
         </div>
@@ -227,7 +170,6 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTPffZMd-c5jCe_1HtbpdsvSxq2bnvRPV2t1a0eH2Bb7zXpISqd4D21CvlJV7BGXVWbY" class="card-img-top" alt="Cachorro">
                 <div class="card-body">
                     <h5 class="card-title">Max</h5>
-                    <p class="card-text">Cachorro que necessita de tratamento contínuo.</p>
                 </div>
             </div>
         </div>
@@ -236,7 +178,6 @@
                 <img src="https://as1.ftcdn.net/v2/jpg/01/06/39/60/1000_F_106396068_ubLYv1qXZgsEHA2ihHcWvXQsyS4WDvox.jpg" class="card-img-top" alt="Gato">
                 <div class="card-body">
                     <h5 class="card-title">Lola</h5>
-                    <p class="card-text">Gata que faz parte do nosso santuário.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +190,6 @@
                 <img src="https://cache.desktopnexus.com/thumbseg/55/55490-bigthumbnail.jpg" class="card-img-top" alt="Cachorro">
                 <div class="card-body">
                     <h5 class="card-title">Duke</h5>
-                    <p class="card-text">Cachorro que precisa de assistência veterinária constante.</p>
                 </div>
             </div>
         </div>
@@ -265,12 +205,6 @@
         <h2>🛒 Loja</h2>
         <p>Ajude a ONG comprando produtos exclusivos.</p>
         <a href="#" class="btn btn-warning">Visitar Loja</a>
-    </section>
-
-    <section id="doacao" class="container bg-amarelo py-5 text-center">
-        <h2>💰 Doe e Ajude</h2>
-        <p>Sua doação nos ajuda a continuar salvando vidas.</p>
-        <a href="#" class="btn btn-primary">Fazer uma Doação</a>
     </section>
 
     <section id="contato" class="container my-5 text-center">

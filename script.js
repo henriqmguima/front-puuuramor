@@ -37,3 +37,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// Header com cor dinamica
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+    const adocaoSection = document.getElementById("adocao");
+
+    window.addEventListener("scroll", function () {
+        const adocaoPosition = adocaoSection.offsetTop; 
+        const scrollPosition = window.scrollY; 
+
+        if (scrollPosition >= adocaoPosition - 50) { 
+            navbar.style.backgroundColor = "#8c7db1"; 
+        } else {
+            navbar.style.backgroundColor = "transparent"; 
+        }
+    });
+});
+
+// Preenche o modal com as informações do animal clicado
+var adoptButtons = document.querySelectorAll('.btn[data-bs-toggle="modal"]');
+adoptButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var name = button.getAttribute('data-name');
+        var description = button.getAttribute('data-description');
+        var image = button.getAttribute('data-image');
+        
+        document.getElementById('modalAnimalName').innerText = name;
+        document.getElementById('modalAnimalDescription').innerText = description;
+        document.getElementById('modalAnimalImage').src = image;
+    });
+});
