@@ -69,3 +69,12 @@ adoptButtons.forEach(function(button) {
         document.getElementById('modalAnimalImage').src = image;
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var myCarousel = document.getElementById('carouselExemplo');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000,
+        wrap: true
+    });
+});
