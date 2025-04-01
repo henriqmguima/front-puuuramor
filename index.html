@@ -21,6 +21,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Puuuramor</a>
+            <div class="logo"></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,46 +46,83 @@
     
     <section id="carousel" class="carousel slide" data-bs-ride="carousel">
         <!-- Indicadores -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+        <section id="carouselExemplo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Primeiro Slide" data-bs-description="Uma breve descrição sobre o conteúdo deste slide. Aqui você pode colocar informações importantes.">
+                    <div class="carousel-caption">
+                        <h2>Título do Primeiro Slide</h2>
+                        <p>Uma breve descrição sobre o conteúdo deste slide. Aqui você pode colocar informações importantes.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais</button>
+                        <!-- <button class="doe" data-bs-toggle="modal" data-bs-target="#modalNoticia">
+                            <div class="wrapper-help">
+                                <div class="help"></div>
+                            </div>
+                        </button> -->
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Segundo Slide" data-bs-description="Outra descrição breve e atrativa para este slide. Destaque os principais pontos do seu conteúdo.">
+                    <div class="carousel-caption">
+                        <h2>Título do Segundo Slide</h2>
+                        <p>Outra descrição breve e atrativa para este slide. Destaque os principais pontos do seu conteúdo.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Terceiro Slide" data-bs-description="Mais uma descrição interessante para este slide. Mantenha seu texto curto e direto ao ponto.">
+                    <div class="carousel-caption">
+                        <h2>Título do Terceiro Slide</h2>
+                        <p>Mais uma descrição interessante para este slide. Mantenha seu texto curto e direto ao ponto.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais <i class="fas fa-arrow-right"></i></button>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controles de navegação -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button> -->
+        </section>
         
-        <!-- Slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('fotos/foto1-news.jpeg');">
-                <div class="carousel-caption">
-                    <h2>Título do Primeiro Slide</h2>
-                    <p>Uma breve descrição sobre o conteúdo deste slide. Aqui você pode colocar informações importantes.</p>
-                    <a href="#" class="btn btn-primary saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                </div>
+        <!-- Modal -->
+        <div class="modal fade" id="modalNoticia" tabindex="-1" aria-labelledby="modalNoticiaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalNoticiaLabel">Título da Notícia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p id="modalDescricao">Aqui vai o conteúdo da notícia.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
             </div>
-            <div class="carousel-item active" style="background-image: url('fotos/foto1-news.jpeg');">
-                <div class="carousel-caption">
-                    <h2>Título do Segundo Slide</h2>
-                    <p>Outra descrição breve e atrativa para este slide. Destaque os principais pontos do seu conteúdo.</p>
-                    <a href="#" class="btn btn-primary saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="carousel-item active" style="background-image: url('fotos/foto1-news.jpeg');">
-                <div class="carousel-caption">
-                    <h2>Título do Terceiro Slide</h2>
-                    <p>Mais uma descrição interessante para este slide. Mantenha seu texto curto e direto ao ponto.</p>
-                    <a href="#" class="btn btn-primary saiba-mais">Saiba Mais <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+          </div>
         </div>
+    
         
-        <!-- Controles de navegação -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Próximo</span>
-        </button>
+        </button> -->
     </section>
         
     
@@ -103,7 +141,9 @@
                         <h5 class="card-title">Mia</h5>
                         <!-- Botão de adoção -->
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Mia" data-description="Mia é uma gatinha carinhosa que adora brincar. Ela procura um lar onde possa receber muito carinho." data-image="https://wallpapers.com/images/hd/matching-cat-pfp-in-bed-ztisy8r2x38x2jbc.jpg">
-                            <i class="bi bi-heart"></i> Adoção
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -115,7 +155,9 @@
                         <h5 class="card-title">Rex</h5>
                         <!-- Botão de adoção -->
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Rex" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://jcpportraits.com/wp-content/uploads/2024/04/Organic-Social_Instagram_Standard-2_1080x1080.jpg">
-                            <i class="bi bi-heart"></i> Adoção
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -127,7 +169,9 @@
                         <h5 class="card-title">Luna</h5>
                         <!-- Botão de adoção -->
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Luna" data-description="Luna é uma gata tranquila que adora um bom lugar para dormir. Ela precisa de uma família que ofereça carinho e cuidados." data-image="https://i.pinimg.com/originals/05/00/b9/0500b96dec3dc9c807226c3bf359ed75.jpg">
-                            <i class="bi bi-heart"></i> Adoção
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
                         </button>
                     </div>
                 </div>
@@ -142,7 +186,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Felix</h5>
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Felix" data-description="sem descricao" data-image="https://avatarfiles.alphacoders.com/315/315251.jpg">
-                            <i class="bi bi-heart"></i> Adoção
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
                         </button>
 
                     </div>
@@ -155,7 +201,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Nina</h5>
                         <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Nina" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://wallpapers.com/images/hd/silly-cat-pictures-1080-x-1080-swx6idnb9efbpbvi.jpg">
-                            <i class="bi bi-heart"></i> Adoção
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
                         </button>
 
                     </div>
@@ -196,6 +244,9 @@
                     <img src="https://media.istockphoto.com/id/1525417918/photo/wearing-cat-scratcher-bored-red-collar-collar-brush-pets-close-up-young-old-handsome-animal.jpg?s=612x612&w=0&k=20&c=pbc2e4Z0ZYjsfif9JKZXlh7vu86f2Whaaqe5GC_mwqg=" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Bento</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,6 +255,9 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTPffZMd-c5jCe_1HtbpdsvSxq2bnvRPV2t1a0eH2Bb7zXpISqd4D21CvlJV7BGXVWbY" class="card-img-top" alt="Cachorro">
                     <div class="card-body">
                         <h5 class="card-title">Max</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -212,6 +266,9 @@
                     <img src="https://as1.ftcdn.net/v2/jpg/01/06/39/60/1000_F_106396068_ubLYv1qXZgsEHA2ihHcWvXQsyS4WDvox.jpg" class="card-img-top" alt="Gato">
                     <div class="card-body">
                         <h5 class="card-title">Lola</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,6 +281,9 @@
                     <img src="https://cache.desktopnexus.com/thumbseg/55/55490-bigthumbnail.jpg" class="card-img-top" alt="Cachorro">
                     <div class="card-body">
                         <h5 class="card-title">Duke</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
