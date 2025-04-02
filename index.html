@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puuuramor - ONG de Resgate Animal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Cagliostro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section class="hero">
+        <h1 style="z-index: 2;">Bem-vindo à Puuuramor 🐾</h1>
+        <p style="z-index: 2;">Uma ONG dedicada ao resgate e adoção de animais em busca de um lar amoroso.</p>
+        <a href="#adocao" class="btn-hero" style="z-index: 2;">Ver animais para adoção</a>
+    </section>    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Puuuramor</a>
+            <div class="logo"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adocao">Adoção</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nao-adotaveis">Não adotáveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loja/loja.html">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <section id="carouselExemplo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExemplo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Primeiro Slide" data-bs-description="Uma breve descrição sobre o conteúdo deste slide. Aqui você pode colocar informações importantes.">
+                    <div class="carousel-caption">
+                        <h2>Título do Primeiro Slide</h2>
+                        <p>Uma breve descrição sobre o conteúdo deste slide. Aqui você pode colocar informações importantes.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais</button>
+                        <!-- <button class="doe" data-bs-toggle="modal" data-bs-target="#modalNoticia">
+                            <div class="wrapper-help">
+                                <div class="help"></div>
+                            </div>
+                        </button> -->
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Segundo Slide" data-bs-description="Outra descrição breve e atrativa para este slide. Destaque os principais pontos do seu conteúdo.">
+                    <div class="carousel-caption">
+                        <h2>Título do Segundo Slide</h2>
+                        <p>Outra descrição breve e atrativa para este slide. Destaque os principais pontos do seu conteúdo.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('fotos/foto1-news.jpeg');" data-bs-title="Título do Terceiro Slide" data-bs-description="Mais uma descrição interessante para este slide. Mantenha seu texto curto e direto ao ponto.">
+                    <div class="carousel-caption">
+                        <h2>Título do Terceiro Slide</h2>
+                        <p>Mais uma descrição interessante para este slide. Mantenha seu texto curto e direto ao ponto.</p>
+                        <button class="saiba-mais" data-bs-toggle="modal" data-bs-target="#modalNoticia">Saiba Mais <i class="fas fa-arrow-right"></i></button>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controles de navegação -->
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button> -->
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalNoticia" tabindex="-1" aria-labelledby="modalNoticiaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalNoticiaLabel">Título da Notícia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p id="modalDescricao">Aqui vai o conteúdo da notícia.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button> -->
+    </section>
+        
+    
+      
+         
+    <section id="adocao" class="container my-5 text-center">
+        <h2>🐾 Adoção</h2>
+        <p>Dê um lar cheio de amor para um de nossos animaizinhos!</p>
+        
+        <div class="row" id="animal-container">
+            <!-- Animais iniciais -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://wallpapers.com/images/hd/matching-cat-pfp-in-bed-ztisy8r2x38x2jbc.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Mia</h5>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Mia" data-description="Mia é uma gatinha carinhosa que adora brincar. Ela procura um lar onde possa receber muito carinho." data-image="https://wallpapers.com/images/hd/matching-cat-pfp-in-bed-ztisy8r2x38x2jbc.jpg">
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://jcpportraits.com/wp-content/uploads/2024/04/Organic-Social_Instagram_Standard-2_1080x1080.jpg" class="card-img-top" alt="Cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Rex</h5>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Rex" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://jcpportraits.com/wp-content/uploads/2024/04/Organic-Social_Instagram_Standard-2_1080x1080.jpg">
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/originals/05/00/b9/0500b96dec3dc9c807226c3bf359ed75.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <!-- Botão de adoção -->
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Luna" data-description="Luna é uma gata tranquila que adora um bom lugar para dormir. Ela precisa de uma família que ofereça carinho e cuidados." data-image="https://i.pinimg.com/originals/05/00/b9/0500b96dec3dc9c807226c3bf359ed75.jpg">
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Animais extras escondidos -->
+        <div class="row d-none" id="extra-adotaveis">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://avatarfiles.alphacoders.com/315/315251.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Felix</h5>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Felix" data-description="sem descricao" data-image="https://avatarfiles.alphacoders.com/315/315251.jpg">
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://wallpapers.com/images/hd/silly-cat-pictures-1080-x-1080-swx6idnb9efbpbvi.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Nina</h5>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal" data-name="Nina" data-description="Rex é um cachorro de grande porte que precisa de um espaço amplo para brincar. Ele é super leal e protetor." data-image="https://wallpapers.com/images/hd/silly-cat-pictures-1080-x-1080-swx6idnb9efbpbvi.jpg">
+                            <div class="wrapper-button">
+                                <div class="adotar"></div>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Botões de Ver Mais e Ver Menos -->
+        <button id="ver-mais" class="btn btn-custom mt-4">Ver Mais</button>
+        <button id="ver-menos" class="btn btn-custom mt-4 d-none">Ver Menos</button>
+         <!-- Modal -->
+    <div class="modal fade" id="adoptModal" tabindex="-1" aria-labelledby="adoptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adoptModalLabel">Informações sobre o animal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalAnimalImage" class="img-fluid mb-3" alt="Animal">
+                    <h5 id="modalAnimalName"></h5>
+                    <p id="modalAnimalDescription"></p>
+                    <a href="https://www.instagram.com/projeto.puuuramor/" target="_blank" class="btn">Quero Adotar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section id="nao-adotaveis" class="container py-5 text-center">
+        <h2>❤️ Animais não adotáveis</h2>
+        <p>Esses animais fazem parte da nossa família e precisam de cuidados contínuos.</p>
+
+        <div class="row" id="nao-adotaveis-container">
+            <!-- Animais iniciais -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/1525417918/photo/wearing-cat-scratcher-bored-red-collar-collar-brush-pets-close-up-young-old-handsome-animal.jpg?s=612x612&w=0&k=20&c=pbc2e4Z0ZYjsfif9JKZXlh7vu86f2Whaaqe5GC_mwqg=" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Bento</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqTPffZMd-c5jCe_1HtbpdsvSxq2bnvRPV2t1a0eH2Bb7zXpISqd4D21CvlJV7BGXVWbY" class="card-img-top" alt="Cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Max</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/01/06/39/60/1000_F_106396068_ubLYv1qXZgsEHA2ihHcWvXQsyS4WDvox.jpg" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Lola</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animais extras escondidos -->
+        <div class="row d-none" id="extra-nao-adotaveis">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://cache.desktopnexus.com/thumbseg/55/55490-bigthumbnail.jpg" class="card-img-top" alt="Cachorro">
+                    <div class="card-body">
+                        <h5 class="card-title">Duke</h5>
+                        <div class="wrapper-button-2">
+                            <div class="apadrinhar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botões de Ver Mais e Ver Menos -->
+        <button id="ver-mais-nao-adotaveis" class="btn btn-custom mt-4">Ver Mais</button>
+        <button id="ver-menos-nao-adotaveis" class="btn btn-custom mt-4 d-none">Ver Menos</button>
+    </section>
+        
+    <section id="loja" class="container my-5 text-center">
+        <h2>🛒 Loja</h2>
+        <p>Ajude a ONG comprando produtos exclusivos.</p>
+        <a href="loja/loja.html" class="btn-loja">Visitar Loja</a>
+
+        <!-- Imagens decorativas de produtos -->
+        <div class="produto-bg" style="top: 10%; left: 5%; transform: rotate(-10deg);"></div>
+        <div class="produto-bg" style="top: 20%; right: 10%; transform: rotate(15deg) scale(1.1);"></div>
+        <div class="produto-bg" style="bottom: 15%; left: 15%; transform: rotate(-5deg) scale(0.9);"></div>
+        <div class="produto-bg" style="bottom: 5%; right: 5%; transform: rotate(20deg);"></div>
+        <div class="produto-bg" style="top: 50%; left: 50%; transform: rotate(-15deg) scale(1.2);"></div>
+    </section>
+
+
+    <section id="contato" class="container my-5 text-center">
+        <h2>📩 Contato</h2>
+        <p>Entre em contato conosco pelos canais abaixo!</p>
+    
+        <div class="d-flex justify-content-center gap-3">
+            <a href="https://wa.me/numero" target="_blank" class="btn-cont">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/projeto.puuuramor/" target="_blank" class="btn-cont">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <button class="btn-cont" data-bs-toggle="modal" data-bs-target="#contatoModal">
+                <i class="bi bi-envelope"></i> Enviar Mensagem
+            </button>
+        </div>
+    </section>
+    
+    <!-- Modal de Contato -->
+    <div class="modal fade" id="contatoModal" tabindex="-1" aria-labelledby="contatoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contatoModalLabel">Enviar Mensagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Seu Nome">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Seu Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn  w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer class="footer text-center">
+        <p>&copy; 2025 Puuuramor - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
