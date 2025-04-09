@@ -56,19 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Preenche o modal com as informações do animal clicado
-var adoptButtons = document.querySelectorAll('.btn[data-bs-toggle="modal"]');
-adoptButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        var name = button.getAttribute('data-name');
-        var description = button.getAttribute('data-description');
-        var image = button.getAttribute('data-image');
-        
-        document.getElementById('modalAnimalName').innerText = name;
-        document.getElementById('modalAnimalDescription').innerText = description;
-        document.getElementById('modalAnimalImage').src = image;
-    });
-});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const modal = new bootstrap.Modal(document.getElementById('modalNoticia'));
@@ -119,3 +107,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var adoptButtons = document.querySelectorAll('.btn[data-bs-toggle="modal"]');
+    adoptButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var name = this.getAttribute('data-name');
+            var description = this.getAttribute('data-description');
+            var image = this.getAttribute('data-image');
+
+            document.getElementById('modalAnimalName').innerText = name;
+            document.getElementById('modalAnimalDescription').innerText = description;
+            document.getElementById('modalAnimalImage').src = image;
+        });
+    });
+});
