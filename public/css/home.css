@@ -206,19 +206,6 @@ nav{
     object-fit: cover;
 }
 
-/* .card .btn {
-    background-color: #8c7db1;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.card .btn:hover {
-    background-color: #8c7db1a1;
-} */
 .card-body button{
     position: absolute;
     z-index: 1;
@@ -244,10 +231,10 @@ nav{
     width: 60px;
     height: 60px;
     background-color: #4A4A4A;
-    -webkit-mask-image: url('icons/ButtonAdopt1.svg');
+    -webkit-mask-image: url('../../public/images/icons/ButtonAdopt1.svg');
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
-    mask-image: url('icons/ButtonAdopt1.svg');
+    mask-image: url('../../public/images/icons/ButtonAdopt1.svg');
     mask-repeat: no-repeat;
     mask-size: contain;
   
@@ -270,10 +257,10 @@ nav{
     width: 60px;
     height: 60px;
     background-color: #000;
-    -webkit-mask-image: url('icons/ButtonApadrinhar1.svg');
+    -webkit-mask-image: url('../../public/images/icons/ButtonApadrinhar1.svg');
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
-    mask-image: url('icons/ButtonApadrinhar1.svg');
+    mask-image: url('../../public/images/icons/ButtonApadrinhar1.svg');
     mask-repeat: no-repeat;
     mask-size: contain;
   
